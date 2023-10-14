@@ -1,0 +1,105 @@
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+body{
+  background: gray;
+}
+.board {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 1px solid rgba(0, 0, 0, 0.351);
+    padding: 20px;
+    gap: 2px;
+    background-color: rgb(202, 155, 35);
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  .cell {
+    width: 69.72px;
+    height: 69.72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid grey;
+    background: lightyellow;
+    cursor: pointer;
+    border-radius: 50%;
+    background: gray;
+  }
+  .turn{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .column-left{
+    width: 50px;
+    background: transparent;
+    height: 500px;
+    border-radius: 5px;
+    border:20px solid rgb(202, 155, 35);
+    z-index: 2;
+  }
+  .column-right{
+    width: 50px;
+    background: transparent;
+    height: 500px;
+    border-radius: 5px;
+    border:20px solid rgb(202, 155, 35);
+    z-index: 2;
+  }
+  .wrapp-game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .chip-one{
+    position: relative;
+    width: 48px;
+    height: 22px;
+    background: rgb(220, 235, 16);
+    border: 1px solid rgb(61, 57, 57);
+
+  }
+  .chip-two{
+    position: relative;
+    width: 48px;
+    height: 22px;
+    background: rgb(227, 16, 16);
+    border: 1px solid rgb(61, 57, 57);
+  }
+  .hide{
+    opacity: 0;
+  }
+  .modal_winner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.401);
+    display: none;
+  }
+  .winner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    margin: 15% auto;
+    background: rgb(224, 162, 30);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 500;
+  }
